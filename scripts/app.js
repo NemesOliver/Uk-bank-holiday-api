@@ -1,7 +1,7 @@
 // Display name and date of a bank holiday
 (function () {
   const fetchName = () => {
-    const api = "3ed390c11a1c301b784fbf0a4cb2859465e6f24e";
+    const api = config.api;
     //fetch
     fetch(
       `https://calendarific.com/api/v2/holidays?&api_key=${api}&country=GB&year=2021`
@@ -41,5 +41,5 @@
   };
   fetchName();
 
-  
+
 })();
